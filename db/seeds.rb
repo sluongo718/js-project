@@ -8,3 +8,5 @@
 
 drink = Cocktail.create(name: "vodka soda", image: "img", instructions: "vodka and soda")
 ingred = Ingredient.create(name: "lemon" , cocktail_id: drink.id)
+ingred_1 = Ingredient.create(name: "soda water" , cocktail_id: drink.id)
+drink_2 = Cocktail.create(name: "rum punch", image: "new img", instructions: "punch with rum in it")
