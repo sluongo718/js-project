@@ -7,8 +7,9 @@ class IngredientsController < ApplicationController
 
     def create 
         ingred = Ingredient.new(ingredient_params)
-
+        if ingred.save
         render json: ingred
+        end
     end
 
     def destroy 
